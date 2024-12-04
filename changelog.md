@@ -1,11 +1,13 @@
-# Ver 1.0
+# Changelog
 
-## Added
+## v1.0
 
-## Modified
+### Added
 
-## Deleted
+### Modified
 
-## Fixed
+### Deleted
 
-## Known Issues
+### Fixed
+
+### Known Issues
