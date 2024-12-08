@@ -43,7 +43,7 @@
       </ul>
     </li>
     <li><a href="#usage-examples">Usage examples</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#todo">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -91,7 +91,7 @@ Some useful examples of how this project can be used (add screenshots, code exam
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
-## Roadmap
+## Todo
 
 - [x] Task 1
 - [x] Task 2
