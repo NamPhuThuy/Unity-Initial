@@ -93,13 +93,11 @@ Some useful examples of how this project can be used (add screenshots, code exam
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Task 1
+- [x] Task 2
+- [ ] Task 3
+    - [ ] Subtask 1
+    - [ ] Subtask 2
 
 See the [open issues](https://github.com/NamPhuThuy/Unity-Initial/issues) for a full list of proposed features (and known issues).
 
