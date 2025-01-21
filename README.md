@@ -105,8 +105,8 @@ See the [open issues](https://github.com/NamPhuThuy/Unity-Initial/issues) for a 
 
 ### Top contributors:
 
-<a href="https://github.com/NamPhuThuy/TN006-Unity-Auto-Cat/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=NamPhuThuy/TN006-Unity-Auto-Cat" alt="contrib.rocks image" />
+<a href="https://github.com/NamPhuThuy/Unity-Initial/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=NamPhuThuy/Unity-Initial" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
