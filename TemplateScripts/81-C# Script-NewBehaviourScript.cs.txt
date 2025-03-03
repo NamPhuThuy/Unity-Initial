@@ -5,13 +5,11 @@ using UnityEngine;
     #ROOTNAMESPACEBEGIN#
 public class #SCRIPTNAME# : MonoBehaviour
 {
-    [Header("Components")]
-    [SerializeField] private Transform _transform;
     #region MonoBehaviour Methods
 
     void Start()
     {
-        _transform = transform;
+        
     }
 
     void Update()
