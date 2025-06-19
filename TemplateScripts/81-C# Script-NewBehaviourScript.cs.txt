@@ -15,7 +15,7 @@ public class #SCRIPTNAME# : MonoBehaviour
 
     #endregion
     
-    #region MonoBehaviour Methods
+    #region MonoBehaviour Callbacks
 
     void Start()
     {
