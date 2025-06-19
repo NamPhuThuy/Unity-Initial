@@ -7,6 +7,14 @@ using UnityEditor;
 
 public class #SCRIPTNAME# : MonoBehaviour
 {
+    #region Private Serializable Fields
+
+    #endregion
+
+    #region Private Fields
+
+    #endregion
+    
     #region MonoBehaviour Methods
 
     void Start()
