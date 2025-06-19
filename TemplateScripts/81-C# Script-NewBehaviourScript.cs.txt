@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
-    #ROOTNAMESPACEBEGIN#
 public class #SCRIPTNAME# : MonoBehaviour
 {
     #region MonoBehaviour Methods
@@ -24,5 +26,36 @@ public class #SCRIPTNAME# : MonoBehaviour
 
     #region Public Methods
     #endregion
+
+    #region Editor Methods
+
+    public void ResetValues()
+    {
+        // Add default reset values logic here
+    }
+
+    #endregion
 }
-#ROOTNAMESPACEEND#
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(#SCRIPTNAME#))]
+[CanEditMultipleObjects]
+public class #SCRIPTNAME#Editor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        // Draw the default inspector
+        DrawDefaultInspector();
+
+        // Get a reference to the script
+        #SCRIPTNAME# script = (#SCRIPTNAME#)target;
+
+        // Add a button to call ResetValues()
+        if (GUILayout.Button("Reset Values"))
+        {
+            script.ResetValues();
+            EditorUtility.SetDirty(script); // Mark the object as dirty
+        }
+    }
+}
+#endif
