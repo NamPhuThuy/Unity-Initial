@@ -48,12 +48,19 @@ namespace NamPhuThuy
         #endregion
     }
 
-    #if UNITY_EDITOR
+    /*#if UNITY_EDITOR
     [CustomEditor(typeof(#SCRIPTNAME#))]
     [CanEditMultipleObjects]
     public class #SCRIPTNAME#Editor : Editor
     {
         private #SCRIPTNAME# script;
+        private Texture2D frogIcon;
+        
+        private void OnEnable()
+        {
+            frogIcon = Resources.Load<Texture2D>("frog"); // no extension needed
+        }
+        
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
@@ -66,7 +73,7 @@ namespace NamPhuThuy
         {
             GUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
-            if (GUILayout.Button("Reset Values", GUILayout.Width(ConstInspector.BUTTON_WIDTH_MEDIUM)))
+            if (GUILayout.Button(new GUIContent("Reset Values", frogIcon), GUILayout.Width(InspectorConst.BUTTON_WIDTH_MEDIUM)))
             {
                 script.ResetValues();
                 EditorUtility.SetDirty(script); // Mark the object as dirty
@@ -75,5 +82,5 @@ namespace NamPhuThuy
             GUILayout.EndHorizontal();
         }
     }
-    #endif
+    #endif*/
 }
