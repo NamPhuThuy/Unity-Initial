@@ -7,7 +7,6 @@ using UnityEditor;
 
 namespace NamPhuThuy
 {
-    
     public class #SCRIPTNAME# : MonoBehaviour
     {
         #region Private Serializable Fields
@@ -20,22 +19,22 @@ namespace NamPhuThuy
 
         #region MonoBehaviour Callbacks
 
-        void Start()
+        private void Start()
         {
             
         }
 
-        void Update()
+        private void Update()
         {
             
         }
 
-        #endregion
-
-        #region Private Methods
         #endregion
 
         #region Public Methods
+        #endregion
+
+        #region Private Methods
         #endregion
 
         #region Editor Methods
