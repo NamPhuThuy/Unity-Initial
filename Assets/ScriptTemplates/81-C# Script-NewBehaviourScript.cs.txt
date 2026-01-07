@@ -57,13 +57,13 @@ namespace NamPhuThuy
         
         private void OnEnable()
         {
+            script = (#SCRIPTNAME#)target;
             frogIcon = Resources.Load<Texture2D>("frog"); // no extension needed
         }
         
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
-            script = (#SCRIPTNAME#)target;
 
             ButtonResetValues();
         }
