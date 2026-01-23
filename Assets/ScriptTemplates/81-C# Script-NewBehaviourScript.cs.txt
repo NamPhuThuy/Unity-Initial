@@ -1,3 +1,9 @@
+/*
+Author: NamPhuThuy
+Github: https://github.com/NamPhuThuy
+Created: #CREATIONDATE#
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +13,16 @@ using UnityEditor;
 
 namespace NamPhuThuy
 {
+    /// <summary>
+    /// #SCRIPTNAME# - Brief description of what this script does
+    /// </summary>
     public class #SCRIPTNAME# : MonoBehaviour
     {
         #region Private Serializable Fields
+
+        // [Header("Flags")]
+
+        // [Header("Stats")]
 
         #endregion
 
@@ -52,13 +65,13 @@ namespace NamPhuThuy
     [CanEditMultipleObjects]
     public class #SCRIPTNAME#Editor : Editor
     {
-        private #SCRIPTNAME# script;
+        private #SCRIPTNAME# _target;
         private Texture2D frogIcon;
         
         private void OnEnable()
         {
-            script = (#SCRIPTNAME#)target;
-            frogIcon = Resources.Load<Texture2D>("frog"); // no extension needed
+            _target = (#SCRIPTNAME#)target;
+            frogIcon = Resources.Load<Texture2D>("frog"); // no file-extension needed
         }
         
         public override void OnInspectorGUI()
@@ -74,11 +87,57 @@ namespace NamPhuThuy
             GUILayout.FlexibleSpace();
             if (GUILayout.Button(new GUIContent("Reset Values", frogIcon), GUILayout.Width(InspectorConst.BUTTON_WIDTH_MEDIUM)))
             {
-                script.ResetValues();
-                EditorUtility.SetDirty(script); // Mark the object as dirty
+                _target.ResetValues();
+                EditorUtility.SetDirty(_target); // Mark the object as dirty
             }
             GUILayout.FlexibleSpace();
             GUILayout.EndHorizontal();
+        }
+
+         private void DrawCustomSection()
+        {
+            EditorGUILayout.LabelField("Custom Settings", EditorStyles.boldLabel);
+            
+            // Add custom inspector fields here
+        }
+        
+        private void DrawButtonsSection()
+        {
+            EditorGUILayout.Space(5);
+            EditorGUILayout.LabelField("Actions", EditorStyles.boldLabel);
+            
+            EditorGUILayout.BeginHorizontal();
+            
+            // Reset Values button
+            if (GUILayout.Button(new GUIContent("Reset Values", _frogIcon, "Reset all values to default")))
+            {
+                if (EditorUtility.DisplayDialog(
+                    "Reset Values",
+                    "Are you sure you want to reset all values?",
+                    "Yes", "Cancel"))
+                {
+                    Undo.RecordObject(_script, "Reset Values");
+                    _script.ResetValues();
+                    EditorUtility.SetDirty(_script);
+                }
+            }
+            
+            // Test button (only in Play Mode)
+            EditorGUI.BeginDisabledGroup(!Application.isPlaying);
+            if (GUILayout.Button("Test"))
+            {
+                // Call test method
+                Debug.Log("Test button clicked!");
+            }
+            EditorGUI.EndDisabledGroup();
+            
+            EditorGUILayout.EndHorizontal();
+            
+            // Help box
+            if (!Application.isPlaying)
+            {
+                EditorGUILayout.HelpBox("Enter Play Mode to test functionality", MessageType.Info);
+            }
         }
     }
     #endif*/
