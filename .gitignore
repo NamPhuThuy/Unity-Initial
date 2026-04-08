@@ -28,6 +28,7 @@
 .vscode/
 .idea/ # Jetbrain IDEs cache directory
 .idea
+.utmp # a temporary folder
 
 # Gradle cache directory
 .gradle/
