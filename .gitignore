@@ -30,6 +30,10 @@
 .idea
 .utmp # a temporary folder
 
+# UIToolKit
+UIElementsSchema
+UIElementsSchema/
+
 # Gradle cache directory
 .gradle/
 
