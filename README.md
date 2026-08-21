@@ -71,11 +71,9 @@ Major frameworks/libraries used in project
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Setup Instruction
 
 Instructions to setup this project locally.
-
-### Prerequisites
 
 ### Installation
 
@@ -120,11 +118,6 @@ See the [open issues](https://github.com/NamPhuThuy/Unity-Initial/issues) for a 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/NamPhuThuy/Unity-Initial.svg?style=for-the-badge
@@ -150,13 +143,6 @@ See the [open issues](https://github.com/NamPhuThuy/Unity-Initial/issues) for a 
 <!-- Mock Up -->
 [product-screenshot]: images/avatar.png
 
-<!-- Tech Stack -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
 [Unity.com]: https://img.shields.io/badge/Unity-61DBFB?style=for-the-badge&logo=unity&logoColor=white&labelColor=black&color=black
 [Unity-url]: https://unity.com/
 [CSharp.com]: https://img.shields.io/badge/C%23-61DBFB?style=for-the-badge&logo=c%23&logoColor=white&labelColor=magenta&color=purple
